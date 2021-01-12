@@ -1,0 +1,42 @@
+https://thefanclub.co.za/how-to/how-setup-usb-3g-modem-raspberry-pi-using-usbmodeswitch-and-wvdial
+
+Ejecutar desde consola el siguiente comando:
+
+sudo wvdial 3gconnect
+
+
+==========================================
+comando at para reproducir conexion
+
+--> Sending: ATZ
+ATZ
+OK
+--> Sending: ATQ0 V1 E1 S0=0 &C1 &D2 +FCLASS=0
+ATQ0 V1 E1 S0=0 &C1 &D2 +FCLASS=0
+OK
+--> Sending: AT+CGDCONT=1,"IP","gprs.personal.com"
+AT+CGDCONT=1,"IP","gprs.personal.com"
+OK
+--> Modem initialized.
+--> Sending: ATDT*99#
+--> Waiting for carrier.
+ATDT*99#
+
+=========================================
+
+more /etc/wvdial.conf
+
+[Dialer Defaults]
+Init1 = ATZ
+Init2 = ATQ0 V1 E1 S0=0 &C1 &D2 +FCLASS=0
+Init3 = AT+CGDCONT=1,"IP","gprs.personal.com"
+Stupid Mode = 1
+Modem Type = Analog Modem
+Baud = 460800
+New PPPD = yes
+Modem = /dev/gsmmodem
+ISDN = 0
+Phone = *99#
+Username = datos
+Password = datos
+

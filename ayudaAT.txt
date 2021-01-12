@@ -1,0 +1,6 @@
+ver centro de servicio: AT+CSCA?
+ver IMSI de la linea: AT+CIMI
+ver operador de la linea: AT+COPS
+comandos USSD: AT+CUSD=1,"comando ussd",15
+verificacion simple AT: AT
+

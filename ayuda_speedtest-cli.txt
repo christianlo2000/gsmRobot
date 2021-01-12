@@ -1,0 +1,9 @@
+# instalar speedtest-cli
+
+.sudo apt-get install python-pip
+
+2.sudo easy_install speedtest-cli
+
+to execute "speedtest-cli"
+
+

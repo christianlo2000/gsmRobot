@@ -1,0 +1,26 @@
+gsmRobot - solucion
+
+objetivo: ejecutar protocolos de pruebas automatizados para telefonia movil, 
+	incluyendo SMS, VOZ y DATOS GPRS.
+
+Hardware necesario: 
+
+1.Raspberry Pi 3 o superior
+2.Dongle Huawei 3g o 4g
+3.chip personal 
+
+requesitos de configuracion
+
+1.si se quiere probar en UAT, que la linea este configurada para las maquetas
+2.tener instalado en Raspberry pi el controlador de dongle wvdial
+3.tener instalado python 2.7 o 3
+4.tener instalado raspbian como sistema operativo
+5.configurar el modem con el apn correspondiente a Telecom
+6.configurar archivos de urls y de sms y de llamadas, son archivos .txt
+
+conocimientos necesarios para operar la solucion
+
+1.conocimiento elemental a intermedio de unix shell
+2.conocimiento basico de python (opcional)
+3.conocimiento de git y github para subir al repositorio.
+

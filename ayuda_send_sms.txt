@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/2161197/how-to-send-receive-sms-using-at-commands
